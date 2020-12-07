@@ -1,5 +1,5 @@
-import * as React from "react";
-import { motion } from "framer-motion";
+import * as React from 'react';
+import { motion } from 'framer-motion';
 
 export interface ContactInfoProps {
   icon: string;
@@ -10,19 +10,19 @@ export interface ContactInfoProps {
 
 export const ContactInfo = (props: ContactInfoProps): JSX.Element => {
   return (
-    <div className={"flex flex-column ma4"}>
+    <div className={'flex flex-column ma4'}>
       <div>
         <motion.div
           className={`fa fa-${props.icon} fa-2x v-mid`}
-          aria-hidden="true"
+          aria-hidden='true'
           whileHover={{ scale: 1.2, rotate: 90 }}
-          whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+          whileTap={{ scale: 0.8, rotate: -90, borderRadius: '100%' }}
         />
-        <a href={props.url} className={"f3 v-mid pl2 tu"}>
+        <a href={props.url} className={'f3 v-mid pl2 tu'}>
           {props.title}
         </a>
       </div>
-      <p className={"lh-copy"}> {props.content} </p>
+      <p className={'lh-copy'}> {props.content} </p>
     </div>
   );
 };
