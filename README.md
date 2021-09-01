@@ -27,9 +27,9 @@ the publishing source for github pages.
 ## Running the project
 To run this project, you need node.js version 15 installed. In the project
 directory:
-* run `npm run install` to install all the dependencies,
-* run `npm run start` to start the project,
-* run `npm run lint` to check for any linting errors.
+* run `npm install` to install all the dependencies,
+* run `npm start` to start the project,
+* run `npm lint` to check for any linting errors.
 
 ## Styling
 This project uses [tachyons] for styling.
